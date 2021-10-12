@@ -1,3 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Signika, sans-serif;
+  margin: 2em;
+}
+
+.header {
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-around;
+}
+
+.questionCard {
+  display: grid;
+  background-color: rgb(211, 211, 211);
+  padding: 2em;
+  width: max-content;
+  border-radius: 1em;
+  box-shadow: 0.5em 0.5em 2em black;
+}
+
+.yes {
+  border: 0;
+  margin: 1em;
+}
+
+.no {
+  border: 0;
+  margin: 1em;
+}
+
 .correct {
   color: green;
 }
