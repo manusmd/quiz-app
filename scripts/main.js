@@ -5,16 +5,28 @@ randomQuestion.textContent = "Are you a robot?";
 
 document.querySelector(".true").onclick = function () {
   if (correctAnswer === true) {
-    alert("That's correct!");
+    const answer = document.createElement("p");
+    answer.textContent = "That's correct";
+    answer.className = "correct";
+    document.body.append(answer);
   } else {
-    alert("That's incorrect!");
+    const answer = document.createElement("p");
+    answer.textContent = "That's incorrect";
+    answer.className = "incorrect";
+    document.body.append(answer);
   }
 };
 
 document.querySelector(".false").onclick = function () {
   if (correctAnswer === false) {
-    alert("That's correct!");
+    const answer = document.createElement("p");
+    answer.textContent = "That's correct";
+    answer.className = "correct";
+    document.body.append(answer);
   } else {
-    alert("That's incorrect!");
+    const answer = document.createElement("p");
+    answer.textContent = "That's incorrect";
+    answer.className = "incorrect";
+    document.body.append(answer);
   }
 };
