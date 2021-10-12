@@ -1,4 +1,10 @@
 const correctAnswer = false;
+const questions = [
+  ["Are you a robot?", true],
+  ["Are you alive?", true],
+  ["Do you have ears?", true],
+  ["Are you an unicorn?", false],
+];
 
 const randomQuestion = document.querySelector(".question");
 randomQuestion.textContent = "Are you a robot?";
@@ -26,7 +32,6 @@ function showAnswerIsCorrect() {
   answer.textContent = "That's correct";
   answer.className = "correct";
   document.body.append(answer);
-  disableButtons();
 }
 function showAnswerIsIncorrect() {
   const answer = document.createElement("p");
@@ -39,4 +44,8 @@ function showAnswerIsIncorrect() {
 function disableButtons() {
   yesButton.disabled = true;
   noButton.disabled = true;
+}
+
+function setNewQuestion() {
+  randomQuestion.textContent("Are you alive?");
 }
